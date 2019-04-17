@@ -12,11 +12,11 @@
               $boolean = true ;
               $bbz = null;
               
-              print $string;
-              print $integer;
-              print $float;
-              print $boolean;
-              print $bbz;
+              print "$string<br>";
+              print "$integer<br>";
+              print "$float<br>";
+              print "$boolean<br>";
+              print "$bbz<br>";
               
                 ?>
         
