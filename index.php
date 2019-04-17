@@ -1,24 +1,19 @@
 <?php
 
-$string1 = rand(1,100);
-$string2 = rand(101,200);
-$string3 = rand(201,300);
-$string4 = rand(301,400);
-      
+$siukslines_turis = 80;
+$siukslines_turis_avg_per_day = 15;
+$max_kaupo_turis = rand(1, 100);
+$dienu = $siukslines_turis % $siukslines_turis_avg_per_day;
+
+
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title><?php print 'Kometarai' ;?></title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Uþduotis</title>
     </head>
     <body>
-        <div class="body1">
-            <h1>Skolos skaiciuokle</h1>
-            <h3>Jei paemei<?php print " $string1 " ;?>jievru</h3>
-            <h3>su dviem kabnciais grazinsi<?php print " $string3" ;?></h3>
-            <h3>su vienu kabanciu grazinsi<?php print " $string2" ?></h3>
-        </div>
+        <h1>Po <?php print "$dienu"; ?> dienu <?php print date('Y-m-d', strtotime("+$dienu days")); ?> pirk geliu ir sampano, jeigu nori, kad zmona pati isnestu siuksles.</h1>
     </body>
 </html>
