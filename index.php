@@ -1,3 +1,7 @@
+<?php
+      $img = "c4.png";
+?>
+<!doctype html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -5,20 +9,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        
-        <?php $string = 'labas';
-              $integer = 2;
-              $float = 3.14;
-              $boolean = true ;
-              $bbz = null;
-              
-              print "$string<br>";
-              print "$integer<br>";
-              print "$float<br>";
-              print "$boolean<br>";
-              print "$bbz<br>";
-              
-                ?>
+        <img src="<?php print $img ?>">
+        <img src="<?php print $img ?>">
+        <img src="<?php print $img ?>">
+        <img src="<?php print $img ?>">
         
     </body>
 </html>
