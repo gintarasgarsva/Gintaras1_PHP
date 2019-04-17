@@ -3,8 +3,8 @@
 $siukslines_turis = 80;
 $siukslines_turis_avg_per_day = 15;
 $max_kaupo_turis = rand(1, 100);
-$dienu = $siukslines_turis % $siukslines_turis_avg_per_day;
-
+$siukslines_turis_su_kaupu = $siukslines_turis + $max_kaupo_turis;
+$dienu = $siukslines_turis_su_kaupu % $siukslines_turis_avg_per_day;
 
 ?>
 <!DOCTYPE html>
