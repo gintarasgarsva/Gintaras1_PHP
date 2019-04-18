@@ -1,10 +1,16 @@
 <?php
 
-$siukslines_turis = 80;
-$siukslines_turis_avg_per_day = 15;
-$max_kaupo_turis = rand(1, 100);
-$siukslines_turis_su_kaupu = $siukslines_turis + $max_kaupo_turis;
-$dienu = $siukslines_turis_su_kaupu % $siukslines_turis_avg_per_day;
+$grizai_velai = rand(0, 1) ;
+$grizai_isgeres = rand(0, 1) ;
+if ($grizai_velai == $grizai_isgeres) {
+    $zinute = 'Miegosi ant sofos, nes grizai velai ir isgeres.';
+} elseif ($grizai_velai == $grizai_isgeres) {
+    $zinute = 'Nemiegosi ant sofos, nes nieko nepadarei.';
+} elseif ($grizai_velai > $grizai_isgeres) {
+    $zinute = 'Nemiegosi ant sofos nes negryzai isgeres.';
+} elseif ($grizai_velai < $grizai_isgeres) {
+    $zinute = 'Nemiegosi ant sofos nes negryzai velai.';
+}
 
 ?>
 <!DOCTYPE html>
@@ -14,6 +20,8 @@ $dienu = $siukslines_turis_su_kaupu % $siukslines_turis_avg_per_day;
         <title>Uþduotis</title>
     </head>
     <body>
-        <h1>Po <?php print "$dienu"; ?> dienu <?php print date('Y-m-d', strtotime("+$dienu days")); ?> pirk geliu ir sampano, jeigu nori, kad zmona pati isnestu siuksles.</h1>
+        <h1>
+            <?php print $zinute ;?>
+        </h1>
     </body>
 </html>
