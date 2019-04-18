@@ -2,13 +2,14 @@
 
 $grizai_velai = rand(0, 1) ;
 $grizai_isgeres = rand(0, 1) ;
-if ($grizai_velai == $grizai_isgeres) {
+
+if ($grizai_velai && $grizai_isgeres) {
     $zinute = 'Miegosi ant sofos, nes grizai velai ir isgeres.';
-} elseif ($grizai_velai == $grizai_isgeres) {
+} elseif (!$grizai_velai && !$grizai_isgeres) {
     $zinute = 'Nemiegosi ant sofos, nes nieko nepadarei.';
-} elseif ($grizai_velai > $grizai_isgeres) {
+} elseif ($grizai_velai && !$grizai_isgeres) {
     $zinute = 'Nemiegosi ant sofos nes negryzai isgeres.';
-} elseif ($grizai_velai < $grizai_isgeres) {
+} elseif (!$grizai_velai && $grizai_isgeres) {
     $zinute = 'Nemiegosi ant sofos nes negryzai velai.';
 }
 
