@@ -20,45 +20,9 @@ $h2 = "JEI MUSI KIAUSINIUS SU $zmones zmonem, tavo tikimybe laimeti bus - $tikim
             .container {
                 text-align: center;
             }
-            heeader {
-                width: 100%;
-            }
-            nav {
-                border: 1px solid black;
-                text-align: center;
-                width: 100%;
-            }
-            a {
-                text-decoration: none;
-                border: 1px solid black;
-                padding: 10px;
-                margin: 20px;
-                color: black;
-            }
-            li {
-                display: inline-block;
-            }
         </style>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.php">INDEX</a>
-                    </li>
-                    <li>
-                        <a href="about.php">ABOUT</a>
-                    </li>
-                    <li>
-                        <a href="contact.php">CONTACT</a>
-                    </li>
-                    <li>
-                        <a href="wip.php">WIP</a>
-                    </li>
-                </ul> 
-            </nav>
-        </header>
         <div class="container">
             <h1><?php print $kiausrakulas; ?></h1>
             <h2><?php print $h2; ?></h2>
